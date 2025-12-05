@@ -1,0 +1,3 @@
+langchain-core
+langchain-deepseek
+python-dotenv
