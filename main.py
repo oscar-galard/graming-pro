@@ -9,14 +9,18 @@ def main():
     lang_fram = input("What language or framework you want to use?: ")
     
     instructions = """
-    Provide a programing learning excersice, that must follow the next order:
 
-    challenge: create {target} in {lang_fram} 
+Create a concise programming exercise to build {target} using {lang_fram}.
 
-    Give the user instructions on how to build this.
-    1. 3-5 concrete features to implement                 
-    2. step-by-step thinking process
-    3. the exersice must be a common task related with the information from {target}
+**Requirements:**
+- Exercise should take 10–40 minutes to implement.
+- Provide only:
+  1. **Objective**: One clear task.
+  2. **Features**: 2–3 specific, practical features to implement.
+  3. **Steps**: Brief, numbered steps (3–5) focusing on core logic.
+  4. **Example code stub** (if applicable) showing structure.
+- Avoid explanations, theory, bonus tasks, testing instructions, or success criteria.
+
     """
     
     Prompt = PromptTemplate(
